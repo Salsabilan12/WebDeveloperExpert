@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Sora:wght@300;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", serif;
+  background-color: #f0eccf;
+}
+
+/* SKIP TO CONTENT */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #ffb100;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.header_menu {
+  font-size: 32px;
+  margin: 10px auto;
+  flex-direction: column;
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #fbc252;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav_item {
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1em;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* JUMBOTRON */
+.hero {
+  display: flex;
+  width: 100%;
+  min-height: 350px;
+  background-image: url("../public/images/heros/hero-image_2.jpg");
+  background-position: center;
+  background-color: green;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffb100;
+}
+
+.hero > h2 {
+  font-size: 50px;
+}
+
+.hero > p {
+  font-size: 20px;
+}
+
+/* MAIN */
+main {
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main > h2 {
+  color: #617143;
+  padding: 15px;
+  border-bottom: 1px solid #ffb100;
+  font-family: "Quicksand";
+}
+
+/* RESTAURANT RECOMMENDATION */
+article {
+  display: grid;
+}
+
+.item {
+  margin: 15px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  box-shadow: 0 2px 8px 2px #fbc252;
+}
+
+.item > img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.desc {
+  padding: 10px;
+  text-align: justify;
+}
+
+.item > .desc > h3 {
+  text-align: center;
+  font-family: "Quicksand";
+}
+
+.item .desc h3 a {
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+/* DETAIL */
+.restaurant {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 2px #fbc252;
+  padding: 20px;
+}
+
+.restaurant > .name {
+  text-align: center;
+  margin: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: #617143;
+}
+
+.rating {
+  padding-bottom: 10px;
+}
+
+.rating > p {
+  font-size: 80px;
+}
+
+.restaurant_info {
+  display:flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: center;
+}
+
+.restaurant img {
+  width: 100%;
+  max-height: 300px;
+  margin: 10px;
+}
+
+.information {
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.description {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: justify;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fbc252;
+  border-radius: 8px;
+
+}
+
+.description > h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.wrap {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 10px;
+  background-color: #ffd98e;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.wrap > h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.review {
+  grid-row-start: 6;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 10px;
+  background-color: #ffe2a7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.review > h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.restaurant-item_not_found {
+  margin: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #539165;
+  padding: 40px;
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+}
